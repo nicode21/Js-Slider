@@ -10,8 +10,6 @@ let tabs = document.querySelectorAll(".body .show .tabs .tab");
 
 let show = document.querySelector(".body .show .tabs");
 
-
-
 let translate = 0;
 let count = 0;
 
@@ -82,6 +80,14 @@ body.addEventListener("keyup", function (e) {
 
   if (e.keyCode == "39") {
     icons[1].click();
+  }
+
+  if (e.keyCode == "40") {
+    show.style.opacity = "0";
+  }
+
+  if (e.keyCode == "38") {
+    show.style.opacity = "1";
   }
 
   // console.log(icons[1].click());
